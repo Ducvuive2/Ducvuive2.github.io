@@ -5,7 +5,7 @@ body{
     position: relative;
     margin: 0 auto 0 auto;
     width: 500px;
-    height: 670px;
+    height: 750px;
     text-align: center;
     background:#6B8DF2;
     border-radius: 60px 60px 60px 60px;
@@ -41,12 +41,13 @@ body{
     margin-bottom: 15px;
 }
 .fill_in{
+    max-width: 100%;
+    margin : 9px 30px;
+    padding: 15px 20px;    
+    color: black;
     background:rgb(255 255 255 / 10%);
     border-radius:25px;
-}
-.fill_in>h3{
-    padding: 15px 20px;    
-    color: rgb(255 255 255 / 48%);
+    outline: none;
 }
 .sign_up{
     background: #1161ee;
@@ -65,7 +66,7 @@ body{
 }
 
 .redirect_login{
-    margin-top: 35px;
+    margin-top: 25px;
 }
 .redirect_login>h3{
     font-size: 17px;
