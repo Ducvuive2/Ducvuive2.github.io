@@ -1,0 +1,23 @@
+body{
+    background: #e6bb4a4a;
+}
+
+.contact{
+    position: relative;
+    text-align: center;
+}
+
+.contact> h2{
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Dosis',sans-serif ;
+    margin-bottom: 70px;
+}
+.contact_info >h3,.contact_info>a{
+    margin: 20px auto;
+    font-size: 20px;
+}
+
+.contact_location{
+    margin-top: 70px;
+}
