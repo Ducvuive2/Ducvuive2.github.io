@@ -50,19 +50,30 @@ body{
     outline: none;
 }
 .sign_up{
-    background: #1161ee;
-    border-radius:25px;
-    margin-bottom: 45px;
-    margin-top: 26px;
+    margin-bottom: 7px;
 }
-.sign_up>h2{
+.button-sign:hover{
+    cursor:pointer;
+}
+.button-sign{
+    font-size: 17px;
+    font-family: sans-serif ;
+    width: 82%;
     padding: 15px 20px;  
-    color: cornsilk;
+    background: #1161ee;
+    outline:none;
+    border: none;
+    color: blanchedalmond;
+    border-radius:25px;
+    margin-bottom: 5px;
+    margin-top: -5px;
+    margin-left: -22px;
+    text-transform: uppercase;
 }
 .line{
     background: rgb(136 163 244);
     height: 2px;
-    margin-top: 48px;
+    margin-top: 37px;
 }
 
 .redirect_login{
