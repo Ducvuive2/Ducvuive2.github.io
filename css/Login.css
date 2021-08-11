@@ -41,7 +41,7 @@ body{
     margin-bottom: 15px;
 }
 .fill_in{
-    max-width: 100%;
+    width: 250px;
     margin : 9px 20px;
     padding: 15px 20px;    
     color: black;
