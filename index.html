@@ -4,57 +4,916 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css" media="screen" >
-    <link rel="stylesheet" href="../css/header.css" media="screen" >
-    <link rel="stylesheet" href="../css/home.css" media="screen" >
-    <link rel="stylesheet" href="../css/footer.css" media="screen" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-    <title>Thuc hanh</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="menu">
-            <ul class="menu_list">
-                <li><a class="scale_up" href="index.html">Home</a></li>
-                <li><a class="scale_up" href="./source/Playlist.html">Playlist</a></li>
-                <li><a class="scale_up" href="./source/Contact.html">Contact</a></li>
-                <li><a class="scale_up" href="./source/Login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container_UI">
-        <div class="container_row">
-            <div class="left_contain">
-                <div class="info">
-                    <div class="logo">
-                        <img src="images/logo2.png" alt="">
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <!-- header QR code -->
+                        <li class="header__nav-item header__nav-item--has-qr header__nav-item--separate">
+                            Tải Tikitaka
+                            <div class="header_qr">
+                                <img src="assets/img/Qr_Code.png" alt="" class="header_qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="#" class="header__qr-link">
+                                        <img src="assets/img/app_Store.png" alt="" class="header__qr-download">
+                                    </a>
+                                    <a href="#" class="header__qr-link">
+                                        <img src="assets/img/ggplay.png" alt="" class="header__qr-download">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <span class= "header__nav--no-pointer">Kết nối</span>
+                            <a href="#" class="header__nav-icon-link">
+                                <i class=" fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="header__nav-icon-link">
+                                <i class=" fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__nav-item header__nav-item--notify">
+                            <a href="#" class="header__navbar-link">
+                                <i class=" far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header_notify">
+                                <header class="header_notify-header">
+                                    <h3>Thông Báo Mới Nhận</h3>
+                                </header>
+                                <ul class="header_notify-list">
+                                    <li class="header_notify-item">
+                                        <a href="#" class= "header_notify-link">
+                                            <img src="https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn" alt="anhSanPham" class = "header_notify-img">
+                                            <div class="header_notify-info">
+                                                <p class="header_notify-name">Mỹ phẩm Ohio chính hãng</p>
+                                                <p class="header_notify-descrip">Mô tả mỹ phẩm Ohio chính hãng</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header_notify-item">
+                                        <a href="#" class= "header_notify-link">
+                                            <img src="https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn" alt="anhSanPham" class = "header_notify-img">
+                                            <div class="header_notify-info">
+                                                <p class="header_notify-name">Mỹ phẩm Ohio chính hãng</p>
+                                                <p class="header_notify-descrip">Mô tả mỹ phẩm Ohio chính hãng</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header_notify-item">
+                                        <a href="#" class= "header_notify-link">
+                                            <img src="https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn" alt="anhSanPham" class = "header_notify-img">
+                                            <div class="header_notify-info">
+                                                <p class="header_notify-name">Mỹ phẩm Ohio chính hãng</p>
+                                                <p class="header_notify-descrip">Mô tả mỹ phẩm Ohio chính hãng</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header_notify-item">
+                                        <a href="#" class= "header_notify-link">
+                                            <img src="https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn" alt="anhSanPham" class = "header_notify-img">
+                                            <div class="header_notify-info">
+                                                <p class="header_notify-name">Mũ lưỡi trai giá rẻ</p>
+                                                <p class="header_notify-descrip">Sản phẩm được làm bằng cotton, mềm dịu, đang giảm giá 70%</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="#" class="header__notify-footer-btn">
+                                        Xem tất cả
+                                    </a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__navbar-link">
+                                <i class=" far fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__nav-item header__nav-item--strong header__nav-item--separate">Đăng kí</li>
+                        <li class="header__nav-item header__nav-item--strong">Đăng nhập</li>
+                    </ul>
+                    
+                </nav>
+                <!-- header with search -->
+                <div class="header-search">
+                    <div class="header__logo">
+                        <a href="/" class="header__logo-link">
+                            <img class="header__logo-img" src="assets/img/logo3.png" alt="chan" >
+                        </a>
+                    </div>
+                    <div class="header__search" >
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                            <!-- search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item" >
+                                        <a href="#" >Mũ lưỡi trai</a>
+                                    </li> 
+                                    <li class="header__search-history-item" >
+                                        <a href="#" >Mũ len</a>
+                                    </li> 
+                                    <li class="header__search-history-item" >
+                                        <a href="#" ></a>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">Trong shop</span>
+                            <i class="header__search-select-icon fas fa-angle-down"></i>
+                            <!-- danh sach option -->
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span>Trong shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </div>
+                    </div>
+                    <!-- cart layout -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <!-- <span class="header_cart-notice">3</span> -->
+                        </div>
+                        <!-- No card : header__cart-list--no-cart -->
+                        <div class="header__cart-list header__cart-list--no-cart">
+                            <!-- No cart -->
+                            <img src="assets/img/noCart2.svg" alt="" class="header__cart-no-cart-img">
+                            <p class = "header__cart-list--no-cart-massge">Chưa có sản phẩm</p>
+                            <!-- Co san pham -->
+                            <!-- <h4 class="header__cart-heading">Sản phẩm đã thêm</h4> -->
+                            <!-- <ul class="header_cart_list-item">
+                                <li class="header__cart-item">
+                                    <img src="assets/img/mu.jpg" alt="" class="header__cart-item">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Mũ lưỡi trai phong cách mới</h5>      
+                                            <span class="header__cart-item-price">2.000.000đ</span>
+                                            <span class="header__cart-item-multiply">x</span>
+                                            <span class="header__cart-item-qnt">1</span>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">Phân loại: Bạc</span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul> -->
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="right_contain">
-                <img src="images/hero1.png" alt="">
-            </div>
-         </div>
-    </div>
-    <div class="member">
-        <h2>Team Miss You</h2>
-        <div class="list_mem">
-            <div class="info_mem">
-                <img src="images/info_mem1.png" alt="">
-                <h2>Nguyễn Vũ Văn Đức</h2>
-            </div>
-            <div class="info_mem">
-                <img src="images/info_mem2.png" alt="">
-                <h2>Miss You</h2>
+        </header>
+
+        <div class="app__container">
+            <!-- column nam trong row -->
+            <div class="grid">
+                <div class="grid__row app__contain">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fas fa-bars"></i>
+                                Danh mục
+                            </h3>
+            
+                            <ul class="category_list">
+                                <li class="category-item " data-index="1">
+                                    <a href="#" class="category-item__link">Mũ lưỡi trai</a>
+                                </li>
+                                <li class="category-item " data-index="2">
+                                    <a href="#" class="category-item__link">Mũ bucket</a>
+                                </li>
+                                <li class="category-item" data-index="3"> 
+                                    <a href="#" class="category-item__link">Mũ snapback</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__title">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn">Phổ biến</button>
+                            <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter__btn btn">Bán chạy</button>
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="select-input__icon fas fa-angle-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Giá thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Giá cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="home-product">
+                            <!-- Grid - > row -> column -->
+                            <div class="grid__row">
+                                <!-- product item -->
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <!-- <img src="assets/img//mu.jpg" alt="" class="ome-product-item__img"> -->
+                                        <div class="home-product-item__img1" style="background-image: url(https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn)"></div>
+                                        <h4 class="home-product-item__name"> Mũ bóng chày thêu chữ phong cách đường phố</h4>
+                                        <div class="home-product-item__price">
+                                            <div class="home-product-item__old">300.000đ</div>
+                                            <div class="home-product-item__new">220.000đ</div>
+                                        </div>
+                                        <!-- hien trang thai like -->
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__racting">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 60</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favorites">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <!-- <img src="assets/img//mu.jpg" alt="" class="ome-product-item__img"> -->
+                                        <div class="home-product-item__img1" style="background-image: url(https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn)"></div>
+                                        <h4 class="home-product-item__name"> Mũ bóng chày thêu chữ phong cách đường phố</h4>
+                                        <div class="home-product-item__price">
+                                            <div class="home-product-item__old">300.000đ</div>
+                                            <div class="home-product-item__new">220.000đ</div>
+                                        </div>
+                                        <!-- hien trang thai like -->
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__racting">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 60</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favorites">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <!-- <img src="assets/img//mu.jpg" alt="" class="ome-product-item__img"> -->
+                                        <div class="home-product-item__img1" style="background-image: url(https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn)"></div>
+                                        <h4 class="home-product-item__name"> Mũ bóng chày thêu chữ phong cách đường phố</h4>
+                                        <div class="home-product-item__price">
+                                            <div class="home-product-item__old">300.000đ</div>
+                                            <div class="home-product-item__new">220.000đ</div>
+                                        </div>
+                                        <!-- hien trang thai like -->
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__racting">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 60</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favorites">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <!-- <img src="assets/img//mu.jpg" alt="" class="ome-product-item__img"> -->
+                                        <div class="home-product-item__img1" style="background-image: url(https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn)"></div>
+                                        <h4 class="home-product-item__name"> Mũ bóng chày thêu chữ phong cách đường phố</h4>
+                                        <div class="home-product-item__price">
+                                            <div class="home-product-item__old">300.000đ</div>
+                                            <div class="home-product-item__new">220.000đ</div>
+                                        </div>
+                                        <!-- hien trang thai like -->
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__racting">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 60</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favorites">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <!-- <img src="assets/img//mu.jpg" alt="" class="ome-product-item__img"> -->
+                                        <div class="home-product-item__img1" style="background-image: url(https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn)"></div>
+                                        <h4 class="home-product-item__name"> Mũ bóng chày thêu chữ phong cách đường phố</h4>
+                                        <div class="home-product-item__price">
+                                            <div class="home-product-item__old">300.000đ</div>
+                                            <div class="home-product-item__new">220.000đ</div>
+                                        </div>
+                                        <!-- hien trang thai like -->
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__racting">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 60</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favorites">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <!-- <img src="assets/img//mu.jpg" alt="" class="ome-product-item__img"> -->
+                                        <div class="home-product-item__img1" style="background-image: url(https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn)"></div>
+                                        <h4 class="home-product-item__name"> Mũ bóng chày thêu chữ phong cách đường phố</h4>
+                                        <div class="home-product-item__price">
+                                            <div class="home-product-item__old">300.000đ</div>
+                                            <div class="home-product-item__new">220.000đ</div>
+                                        </div>
+                                        <!-- hien trang thai like -->
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__racting">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 60</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favorites">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <!-- <img src="assets/img//mu.jpg" alt="" class="ome-product-item__img"> -->
+                                        <div class="home-product-item__img1" style="background-image: url(https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn)"></div>
+                                        <h4 class="home-product-item__name"> Mũ bóng chày thêu chữ phong cách đường phố</h4>
+                                        <div class="home-product-item__price">
+                                            <div class="home-product-item__old">300.000đ</div>
+                                            <div class="home-product-item__new">220.000đ</div>
+                                        </div>
+                                        <!-- hien trang thai like -->
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__racting">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 60</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favorites">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <!-- <img src="assets/img//mu.jpg" alt="" class="ome-product-item__img"> -->
+                                        <div class="home-product-item__img1" style="background-image: url(https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn)"></div>
+                                        <h4 class="home-product-item__name"> Mũ bóng chày thêu chữ phong cách đường phố</h4>
+                                        <div class="home-product-item__price">
+                                            <div class="home-product-item__old">300.000đ</div>
+                                            <div class="home-product-item__new">220.000đ</div>
+                                        </div>
+                                        <!-- hien trang thai like -->
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__racting">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 60</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favorites">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <!-- <img src="assets/img//mu.jpg" alt="" class="ome-product-item__img"> -->
+                                        <div class="home-product-item__img1" style="background-image: url(https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn)"></div>
+                                        <h4 class="home-product-item__name"> Mũ bóng chày thêu chữ phong cách đường phố</h4>
+                                        <div class="home-product-item__price">
+                                            <div class="home-product-item__old">300.000đ</div>
+                                            <div class="home-product-item__new">220.000đ</div>
+                                        </div>
+                                        <!-- hien trang thai like -->
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__racting">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 60</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favorites">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <!-- <img src="assets/img//mu.jpg" alt="" class="ome-product-item__img"> -->
+                                        <div class="home-product-item__img1" style="background-image: url(https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn)"></div>
+                                        <h4 class="home-product-item__name"> Mũ bóng chày thêu chữ phong cách đường phố</h4>
+                                        <div class="home-product-item__price">
+                                            <div class="home-product-item__old">300.000đ</div>
+                                            <div class="home-product-item__new">220.000đ</div>
+                                        </div>
+                                        <!-- hien trang thai like -->
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__racting">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 60</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favorites">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4 ">
+                                    <a class="home-product-item" href="#">
+                                        <!-- <img src="assets/img//mu.jpg" alt="" class="ome-product-item__img"> -->
+                                        <div class="home-product-item__img1" style="background-image: url(https://cf.shopee.vn/file/46cd77c3999369dfcccc0edb48c4d386_tn)"></div>
+                                        <h4 class="home-product-item__name"> Mũ bóng chày thêu chữ phong cách đường phố</h4>
+                                        <div class="home-product-item__price">
+                                            <div class="home-product-item__old">300.000đ</div>
+                                            <div class="home-product-item__new">220.000đ</div>
+                                        </div>
+                                        <!-- hien trang thai like -->
+                                        <div class="home-product-item__action ">
+                                            <span class="home-product-item__like home-product-item__liked">
+                                                <i class="home-product-item__icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__racting">
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class="home-product-item__star-gold fas fa-star"></i>
+                                                <i class=" fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">Đã bán 60</span>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favorites">
+                                            <i class="fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <ul class="pagination home-product-pagination">
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-left "></i>
+                                </a>
+                            </li>
+
+                            <li class="pagination-item pagination-item__active">
+                                <a href="#" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">...</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">10</a>
+                            </li>
+                            
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-angle-right "></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">
+                                    Trung tâm trợ giúp
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">
+                                    Tikitada Mall
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">
+                                    Hướng dẫn nua hàng
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">
+                                    Tuyển dụng
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">
+                                    Điều khoản
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">
+                                    Mũ lưỡi trai
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">
+                                    Mũ bóng chày
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">
+                                    Mũ len
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Theo dõi chúng tôi</h3>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">
+                                    <i class="footer_item-icon fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">
+                                    <i class="footer_item-icon fab fa-instagram"></i>
+                                    instagram
+                                </a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_item-link">
+                                    <i class="footer_item-icon fab fa-linkedin"></i>
+                                    Linked
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="/assets/img/Qr_Code.png" alt="" class="footer__download-qr">
+                            <div class="footer__download-app">
+                                <img src="/assets/img/app_Store.png" alt="" class="footer__download-app-img">
+                                <img src="/assets/img/ggplay.png" alt="" class="footer__download-app-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="grid">
+                    <p class="footer__text">©Bản quyền thuộc về công ty Tikitaka</p>
+                </div>
+            </div>
+        </footer>
     </div>
-    <footer>
-        <div class="footer">
-            <h2>Sushi  music</h2>
+
+    <!-- Modal layout -->
+    <!-- <div class = "modal"> -->
+         <!--lop chiem het man hinh -->
+        <!-- <div class="modal__overlay"> -->
+             <!-- lop phu den nhin xuyen qua -->
+
+        <!-- </div>
+        <div class="modal_body"> -->
+            <!-- noi phan trong tam -->
+        <!-- form loggin/gister : thành phần riêng -->
+        <!-- viet content trong nay -->
+            <!-- Register form-->
+            <!-- <div class="auth-form">
+                <div class="author-form_container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-bth">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Password">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng kí, bạn đã đồng ý với Tikitaka về
+                            <a href="#" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="#" class="auth-form__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__control-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn--primary">Đăng ký</button> 
+                    </div>
+                </div>-->
+                <!-- social -->
+                <!-- <div class="autu-form__socials">
+                    <a href="#" class="autu-form__social-facebook btn btn--icon btn-size-s">
+                        <i class="autu-form__socials-icon fab fa-facebook-square"></i>
+                        <span class= "auth-form__socials-title">Kết nối với facebook </span >
+                    </a>
+                    <a href="#" class="autu-form__social-google btn btn--icon btn-size-s">
+                        <i class="autu-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với google</span >
+                    </a>
+                </div>
+            </div> --> 
+
+            <!-- Login form-->
+            <!-- <div class="auth-form">
+                <div class="author-form_container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-bth">Đăng kí</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                       <div class="auth-form__help">
+                           <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                           <span class="auth-form__help-separate"></span>
+                           <a href="" class="auth-form__help-link">Cần trợ giúp</a>
+                       </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__control-back btn--normal">TRỞ LẠI</button> -->
+                        <!-- <button class="btn btn--primary">Đăng Nhập</button>  -->
+                        <!-- button chinh -->
+                    <!-- </div>
+                </div> -->
+                <!-- social -->
+                <!-- <div class="autu-form__socials">
+                    <a href="#" class="autu-form__social-facebook btn btn--icon btn-size-s">
+                        <i class="autu-form__socials-icon fab fa-facebook-square"></i>
+                        <span class= "auth-form__socials-title">Kết nối với facebook </span >
+                    </a>
+                    <a href="#" class="autu-form__social-google btn btn--icon btn-size-s">
+                        <i class="autu-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với google</span >
+                    </a>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div> -->
+    <script src="assets/js/handle.js"></script>
 </body>
 </html>
