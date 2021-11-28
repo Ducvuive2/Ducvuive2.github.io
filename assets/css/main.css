@@ -28,7 +28,7 @@ a{
 }
 
 .header__nav-item--has-qr:hover .header_qr,
-.header__nav-item--notify:hover .header_notify
+.header__nav-item--notify.active .header_notify
 {
     display: block;
 }
@@ -492,9 +492,13 @@ a{
     padding-left: 16px;
     position: relative;
     cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 
-.header__search-select:hover .header__search-option{
+.header__search-option.active{
     display: block;
 }   
 

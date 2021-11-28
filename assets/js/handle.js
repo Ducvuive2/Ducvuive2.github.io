@@ -41,5 +41,26 @@ ActiveItem = function(index){
     //console.log(activeItem)
 }
 
+notify = document.querySelector('.header__nav-item.header__nav-item--notify');
+notify_form = document.querySelector('.header__nav-item--notify')
+notify_form.onclick = function(e){
+    notify.classList.toggle('active')
+    e.stopPropagation();
+}
 
 
+//Hiên option
+
+selectShop = document.querySelector('.header__search-select')
+showShop = document.querySelector('.header__search-option')
+
+selectShop.onclick = function(e) {
+    showShop.classList.toggle("active")
+    e.stopPropagation()
+}
+
+document.onclick = function(){
+    //console.log(1)
+    notify.classList.remove("active")
+    showShop.classList.remove("active")
+}
